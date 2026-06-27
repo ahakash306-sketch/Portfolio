@@ -1,0 +1,434 @@
+/* ── FOOTER OVERRIDE ── */
+footer {
+  margin-top: 40px;
+}
+
+/* ── CASE STUDY HERO ── */
+#cs-hero {
+  padding: 120px 0 80px;
+}
+
+#cs-hero > .container {
+  max-width: 100%;
+}
+
+.cs-hero-card {
+  background: #131313;
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 460px;
+  overflow: hidden;
+}
+
+.cs-hero-text {
+  padding: 60px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cs-hero-headline {
+  font-size: clamp(26px, 3vw, 38px);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.cs-hero-headline .accent {
+  color: var(--cs-accent);
+  font-weight: 700;
+}
+
+.cs-hero-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.65;
+  margin-bottom: 48px;
+}
+
+.cs-hero-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--cs-accent);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: gap 0.2s;
+}
+.cs-hero-link:hover { gap: 10px; }
+
+.cs-hero-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cs-hero-img {
+  padding: 16px;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.cs-hero-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* ── META INFO ── */
+#cs-meta {
+  padding: 80px 0 100px;
+}
+
+.cs-meta-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 80px;
+  row-gap: 40px;
+}
+
+.cs-meta-item {
+  border-left: 2px solid var(--cs-accent);
+  padding-left: 20px;
+}
+
+.cs-meta-label {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.cs-meta-value {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ── SHARED SECTION HEADER (dot-line) ── */
+.cs-section-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.cs-section-title {
+  font-size: clamp(24px, 3.2vw, 34px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  white-space: nowrap;
+}
+
+.cs-section-header::after {
+  content: '';
+  width: 200px;
+  flex-shrink: 0;
+  height: 5px;
+  background-image:
+    linear-gradient(#ffffff, #ffffff),
+    radial-gradient(circle, #ffffff 2.5px, transparent 2.5px);
+  background-size: calc(100% - 6px) 1px, 5px 5px;
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+}
+
+/* ── IMPACT ── */
+#cs-impact {
+  padding: 80px 0 100px;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.impact-card {
+  background: #131313;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.impact-card-img {
+  height: 280px;
+  padding: 12px 12px 0;
+  overflow: hidden;
+}
+
+.impact-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.impact-card-text {
+  padding: 16px 24px 24px;
+}
+
+.impact-stat {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.impact-desc {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+}
+
+/* ── PROJECT OVERVIEW ── */
+#cs-overview {
+  padding: 80px 0;
+}
+
+.cs-overview-body p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+
+.cs-overview-body p:last-child { margin-bottom: 0; }
+
+/* ── ROLE & TEAM ── */
+#cs-role {
+  padding: 80px 0 100px;
+}
+
+.cs-role-grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 60px;
+  align-items: start;
+}
+
+.cs-role-text p {
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.85;
+  margin-bottom: 24px;
+}
+
+.cs-role-text p:last-child { margin-bottom: 0; }
+
+.cs-team-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.cs-team-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  letter-spacing: -0.01em;
+}
+
+.cs-team-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cs-team-member {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cs-team-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+
+.cs-team-icon svg { width: 14px; height: 14px; }
+
+.cs-team-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.cs-team-role {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── THE OUTCOME ── */
+#cs-outcome {
+  padding: 80px 0;
+}
+
+.cs-outcome-img {
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1a1040;
+}
+
+.cs-outcome-img img {
+  width: 100%;
+  display: block;
+}
+
+/* ── WE WORKED FOR ── */
+#cs-clients {
+  padding: 60px 0 80px;
+}
+
+.cs-clients-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.cs-client-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+  opacity: 0.85;
+  filter: brightness(100);
+}
+
+/* ── NDA CARD ── */
+#cs-nda {
+  padding: 0 0 80px;
+}
+
+.cs-nda-card {
+  background: #131313;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+.cs-nda-barrier {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.cs-nda-barrier img,
+.cs-nda-barrier image {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.cs-nda-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.cs-nda-sub {
+  font-size: 14px;
+  color: rgba(255,255,255,0.55);
+  max-width: 480px;
+  margin: 0 auto 36px;
+  line-height: 1.65;
+}
+
+.cs-nda-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.cs-nda-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 100px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.cs-nda-btn:hover { background: rgba(255,255,255,0.05); border-color: #555; }
+.cs-nda-btn svg { width: 14px; height: 14px; }
+
+/* ── RESPONSIVE ── */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .cs-hero-card { grid-template-columns: 1fr; height: auto; }
+  .cs-hero-text { padding: 48px 40px; }
+  .cs-hero-img { height: 280px; padding: 12px; }
+
+  .cs-meta-grid { column-gap: 40px; row-gap: 32px; }
+
+  .impact-grid { gap: 16px; }
+
+  .cs-role-grid { grid-template-columns: 1fr; gap: 40px; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  #cs-hero { padding: 100px 0 48px; }
+  #cs-meta { padding: 56px 0 72px; }
+  #cs-impact { padding: 56px 0 72px; }
+  #cs-overview { padding: 56px 0; }
+  #cs-role { padding: 56px 0 72px; }
+  #cs-outcome { padding: 56px 0; }
+  #cs-clients { padding: 40px 0 56px; }
+  #cs-nda { padding: 0 0 56px; }
+
+  .cs-hero-card { grid-template-columns: 1fr; height: auto; }
+  .cs-hero-text { padding: 32px 24px 36px; }
+  .cs-hero-img { height: 220px; padding: 10px; }
+  .cs-hero-sub { margin-bottom: 32px; }
+
+  .cs-meta-grid { grid-template-columns: 1fr; column-gap: 0; row-gap: 24px; }
+
+  .cs-section-header { margin-bottom: 32px; gap: 14px; }
+  .cs-section-title { white-space: normal; }
+  .cs-section-header::after { display: none; }
+  footer { margin-top: 24px; }
+
+  .impact-grid { grid-template-columns: 1fr; }
+
+  .cs-role-grid { grid-template-columns: 1fr; gap: 32px; }
+
+  .cs-clients-row { gap: 28px; }
+  .cs-client-logo img { height: 28px; }
+
+  .cs-nda-card { padding: 40px 24px; }
+  .cs-nda-actions { flex-direction: column; align-items: center; }
+  .cs-nda-btn { width: 100%; max-width: 260px; justify-content: center; }
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Study | Akash Hossain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <script src="data/case-studies.js"></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav></nav>
+
+  <!-- HERO CARD -->
+  <section id="cs-hero">
+    <div class="container">
+      <div class="cs-hero-card">
+        <div class="cs-hero-text">
+          <div>
+            <h1 class="cs-hero-headline" id="cs-hero-headline"></h1>
+            <p class="cs-hero-sub" id="cs-hero-sub"></p>
+          </div>
+          <div class="cs-hero-links">
+            <a id="cs-live-link" href="#" class="cs-hero-link">
+              <span id="cs-live-label">View Live Product</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+              </svg>
+            </a>
+            <a id="cs-secondary-link" href="#" class="cs-hero-link" style="display:none">
+              <span id="cs-secondary-label"></span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="cs-hero-img">
+          <img id="cs-hero-img" src="" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- META INFO -->
+  <section id="cs-meta">
+    <div class="container">
+      <div class="cs-meta-grid" id="cs-meta-grid"></div>
+    </div>
+  </section>
+
+  <!-- THE IMPACT -->
+  <section id="cs-impact">
+    <div class="container">
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">the Impact</h2>
+      </div>
+      <div class="impact-grid" id="cs-impact-grid"></div>
+    </div>
+  </section>
+
+  <!-- PROJECT OVERVIEW -->
+  <section id="cs-overview">
+    <div class="container">
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">Project Overview</h2>
+      </div>
+      <div class="cs-overview-body" id="cs-overview-body"></div>
+    </div>
+  </section>
+
+  <!-- ROLE & TEAM -->
+  <section id="cs-role">
+    <div class="container">
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">Role &amp; Team</h2>
+      </div>
+      <div class="cs-role-grid">
+        <div class="cs-role-text" id="cs-role-text"></div>
+        <div class="cs-team-card">
+          <p class="cs-team-title">My Team</p>
+          <div class="cs-team-list" id="cs-team-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE OUTCOME -->
+  <section id="cs-outcome">
+    <div class="container">
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">the Outcome</h2>
+      </div>
+      <div class="cs-outcome-img">
+        <img id="cs-outcome-img" src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- WE WORKED FOR -->
+  <section id="cs-clients">
+    <div class="container">
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">We worked for</h2>
+      </div>
+      <div class="cs-clients-row" id="cs-clients-row"></div>
+    </div>
+  </section>
+
+  <!-- NDA CARD -->
+  <section id="cs-nda">
+    <div class="container">
+      <div class="cs-nda-card">
+        <span class="cs-nda-barrier">
+          <img src="images/nda.gif" alt="Lock Icon" />
+        </span>
+        <h3 class="cs-nda-title">And that's all I can reveal here!</h3>
+        <p class="cs-nda-sub">The full story is locked away under NDA. Want to know more? Let's connect and I'll share what I can behind the scenes!</p>
+        <div class="cs-nda-actions">
+          <a href="index.html#connect" class="cs-nda-btn">
+            Connect
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="8" rx="1.5"/><path d="M1 5l6 4 6-4"/></svg>
+          </a>
+          <a href="#" class="cs-nda-btn">
+            Visit Application
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer></footer>
+
+  <script src="components.js"></script>
+  <script>
+    const ICONS = {
+      lock:   `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="10" height="8" rx="1.5"/><path d="M5 7V5a3 3 0 0 1 6 0v2"/></svg>`,
+      design: `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="5"/><circle cx="8" cy="8" r="1.5" fill="currentColor" stroke="none"/></svg>`,
+      code:   `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4L2 8l3 4M11 4l3 4-3 4"/></svg>`,
+      qa:     `<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="8" cy="6" rx="3" ry="2"/><path d="M2 8c0 3 2.5 5 6 5s6-2 6-5"/><path d="M2 8h12"/></svg>`,
+    };
+
+    const id = new URLSearchParams(window.location.search).get('id') || 'kriyam';
+    const cs = CASE_STUDIES.cases.find(c => c.id === id);
+
+    (function() {
+        if (!cs) {
+          document.body.innerHTML = '<p style="color:white;padding:4rem 2rem">Case study not found.</p>';
+          return;
+        }
+        document.title = cs.pageTitle;
+        document.documentElement.style.setProperty('--cs-accent', cs.accentColor);
+
+        document.getElementById('cs-hero-headline').innerHTML =
+          `<span class="accent">${cs.hero.headlineAccent}</span>${cs.hero.headlineText.replace(/\n/g, '<br>')}`;
+        document.getElementById('cs-hero-sub').textContent = cs.hero.sub;
+        document.getElementById('cs-live-link').href = cs.hero.liveUrl;
+        document.getElementById('cs-live-label').textContent = cs.hero.liveLabel || 'View Live Product';
+        if (cs.hero.secondaryLiveUrl) {
+          const sec = document.getElementById('cs-secondary-link');
+          sec.href = cs.hero.secondaryLiveUrl;
+          sec.style.display = '';
+          document.getElementById('cs-secondary-label').textContent = cs.hero.secondaryLiveLabel || 'Visit Website';
+        }
+        const heroImg = document.getElementById('cs-hero-img');
+        heroImg.src = cs.hero.image;
+        heroImg.alt = cs.hero.imageAlt;
+
+        document.getElementById('cs-meta-grid').innerHTML = cs.meta.map(m => `
+          <div class="cs-meta-item">
+            <p class="cs-meta-label">${m.label}</p>
+            <p class="cs-meta-value">${m.value.replace(/\n/g, '<br>')}</p>
+          </div>`).join('');
+
+        document.getElementById('cs-impact-grid').innerHTML = cs.impact.map(c => `
+          <div class="impact-card">
+            <div class="impact-card-img"><img src="${c.image}" alt="${c.imageAlt}" style="${c.imagePosition ? 'object-position:' + c.imagePosition : ''}" /></div>
+            <div class="impact-card-text">
+              <h3 class="impact-stat">${c.stat}</h3>
+              <p class="impact-desc">${c.desc}</p>
+            </div>
+          </div>`).join('');
+
+        document.getElementById('cs-overview-body').innerHTML = cs.overview.map(p => `<p>${p}</p>`).join('');
+
+        document.getElementById('cs-role-text').innerHTML = cs.roleText.map(p => `<p>${p}</p>`).join('');
+
+        document.getElementById('cs-team-list').innerHTML = cs.team.map(m => `
+          <div class="cs-team-member">
+            <div class="cs-team-icon">${ICONS[m.icon] || ICONS.code}</div>
+            <div>
+              <p class="cs-team-name">${m.name}</p>
+              <p class="cs-team-role">${m.role}</p>
+            </div>
+          </div>`).join('');
+
+        const outcomeImg = document.getElementById('cs-outcome-img');
+        outcomeImg.src = cs.outcome.image;
+        outcomeImg.alt = cs.outcome.alt;
+
+        if (cs.clients && cs.clients.length > 0) {
+          document.getElementById('cs-clients-row').innerHTML = cs.clients.map(c => `
+            <div class="cs-client-logo"><img src="${c.logo}" alt="${c.alt}" /></div>`).join('');
+        } else {
+          document.getElementById('cs-clients').style.display = 'none';
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>

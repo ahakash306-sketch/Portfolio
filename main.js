@@ -20,6 +20,12 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
+// Journey expand
+document.getElementById('journeyBtn').addEventListener('click', () => {
+  document.querySelectorAll('.jt-item--hidden').forEach(el => el.classList.remove('jt-item--hidden'));
+  document.getElementById('journeyCta').style.display = 'none';
+});
+
 // Hero slider — drag to scroll
 const slider = document.getElementById('heroSlider');
 let isDown = false, startX, scrollLeft;
@@ -62,30 +68,3 @@ slider.addEventListener('mouseup', startAuto);
 slider.addEventListener('touchstart', () => clearInterval(autoTimer), { passive: true });
 slider.addEventListener('touchend', startAuto);
 
-// Journey drawer
-const journeyBtn     = document.getElementById('journeyBtn');
-const journeyDrawer  = document.getElementById('journeyDrawer');
-const journeyOverlay = document.getElementById('journeyOverlay');
-const journeyClose   = document.getElementById('journeyClose');
-
-function openDrawer() {
-  journeyDrawer.classList.add('open');
-  journeyOverlay.classList.add('open');
-  journeyDrawer.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden';
-}
-
-function closeDrawer() {
-  journeyDrawer.classList.remove('open');
-  journeyOverlay.classList.remove('open');
-  journeyDrawer.setAttribute('aria-hidden', 'true');
-  document.body.style.overflow = '';
-}
-
-journeyBtn.addEventListener('click', openDrawer);
-journeyClose.addEventListener('click', closeDrawer);
-journeyOverlay.addEventListener('click', closeDrawer);
-
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeDrawer();
-});

@@ -21,10 +21,13 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
 // Journey expand
-document.getElementById('journeyBtn').addEventListener('click', () => {
-  document.querySelectorAll('.jt-item--hidden').forEach(el => el.classList.remove('jt-item--hidden'));
-  document.getElementById('journeyCta').style.display = 'none';
-});
+const journeyBtn = document.getElementById('journeyBtn');
+if (journeyBtn) {
+  journeyBtn.addEventListener('click', () => {
+    document.querySelectorAll('.jt-item--hidden').forEach(el => el.classList.remove('jt-item--hidden'));
+    document.getElementById('journeyCta').style.display = 'none';
+  });
+}
 
 // Hero slider — drag to scroll
 const slider = document.getElementById('heroSlider');

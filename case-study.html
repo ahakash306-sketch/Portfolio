@@ -173,7 +173,7 @@
         heroImg.alt = cs.hero.imageAlt;
         heroImg.src = cs.hero.image;
 
-        if (cs.hero.liveUrl && cs.hero.liveUrl !== '#') {
+        if (cs.id !== 'proteger') {
           const ndaBtn = document.getElementById('cs-nda-app-btn');
           ndaBtn.href = cs.hero.liveUrl;
           ndaBtn.style.display = '';

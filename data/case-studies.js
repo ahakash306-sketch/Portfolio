@@ -8,7 +8,7 @@ const CASE_STUDIES = {
         "headlineAccent": "3X",
         "headlineText": " Faster Verifications\nwith zero data leaks...",
         "sub": "End-to-end field investigation — dispatch, track, collect, verify.",
-        "liveUrl": "#",
+        "liveUrl": "https://tfsin.trykriyam.in/users/sign_in",
         "image": "images/slide-purple_1.png",
         "imageAlt": "Kriyam App"
       },

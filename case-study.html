@@ -126,7 +126,7 @@
             Connect
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="12" height="8" rx="1.5"/><path d="M1 5l6 4 6-4"/></svg>
           </a>
-          <a href="#" class="cs-nda-btn">
+          <a id="cs-nda-app-btn" href="#" class="cs-nda-btn" style="display:none">
             Visit Application
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/></svg>
           </a>
@@ -172,6 +172,12 @@
         const heroImg = document.getElementById('cs-hero-img');
         heroImg.alt = cs.hero.imageAlt;
         heroImg.src = cs.hero.image;
+
+        if (cs.hero.liveUrl && cs.hero.liveUrl !== '#') {
+          const ndaBtn = document.getElementById('cs-nda-app-btn');
+          ndaBtn.href = cs.hero.liveUrl;
+          ndaBtn.style.display = '';
+        }
 
         document.getElementById('cs-meta-grid').innerHTML = cs.meta.map(m => `
           <div class="cs-meta-item">

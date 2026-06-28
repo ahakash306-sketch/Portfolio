@@ -168,9 +168,9 @@ const CASE_STUDIES = {
         "headlineAccent": "90%",
         "headlineText": " reduction in payroll\nprocessing friction.",
         "sub": "A comprehensive HR and attendance platform built for office-based workforces. Intelligence at the point of interaction.",
-        "liveUrl": "#",
+        "liveUrl": "https://goodbook.co.in/auth/signin",
         "liveLabel": "View Application",
-        "secondaryLiveUrl": "#",
+        "secondaryLiveUrl": "https://goodbook.co.in/",
         "secondaryLiveLabel": "Visit Website",
         "image": "images/cs-goodbook-hero.jpg",
         "imageAlt": "Goodbook HR App on Laptop and Phone"

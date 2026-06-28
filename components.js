@@ -15,17 +15,11 @@
   document.querySelector('footer').innerHTML = `
     <div class="footer-copy">Copyright &copy; Akash Hossain 2026</div>
     <div class="footer-right">
-      <a href="mailto:" class="connect-btn connect-btn--mail">Write a Mail</a>
-      <a href="https://www.behance.net/" target="_blank" class="social-icon" aria-label="Behance">
+      <a href="mailto:ahakash306@gmail.com?subject=Hey%2C%20" class="connect-btn connect-btn--mail">Write a Mail</a>
+      <a href="https://www.behance.net/akashhossain" target="_blank" class="social-icon" aria-label="Behance">
         <img src="images/Behance.svg" alt="Behance" width="35" height="35" />
       </a>
-      <a href="https://wa.me/" target="_blank" class="social-icon" aria-label="WhatsApp">
-        <img src="images/WhatsApp.svg" alt="WhatsApp" width="35" height="35" />
-      </a>
-      <a href="https://www.instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">
-        <img src="images/Instagram_white.svg" alt="Instagram" width="35" height="35" />
-      </a>
-      <a href="https://www.linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/akash-h-11946b16b" target="_blank" class="social-icon" aria-label="LinkedIn">
         <img src="images/LinkedIN_white.svg" alt="LinkedIn" width="35" height="35" />
       </a>
     </div>

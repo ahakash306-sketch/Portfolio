@@ -171,7 +171,11 @@
         }
         const heroImg = document.getElementById('cs-hero-img');
         heroImg.alt = cs.hero.imageAlt;
-        heroImg.addEventListener('load', () => heroImg.classList.add('loaded'));
+        heroImg.addEventListener('load', () => {
+          heroImg.classList.add('loaded');
+          heroImg.parentElement.style.animation = 'none';
+          heroImg.parentElement.style.background = 'none';
+        });
         heroImg.src = cs.hero.image;
 
         document.getElementById('cs-meta-grid').innerHTML = cs.meta.map(m => `

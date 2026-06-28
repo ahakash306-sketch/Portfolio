@@ -72,6 +72,14 @@ footer {
   padding: 16px;
   overflow: hidden;
   min-height: 0;
+  background: linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%);
+  background-size: 200% 100%;
+  animation: cs-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes cs-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 .cs-hero-img img {
@@ -80,6 +88,12 @@ footer {
   object-fit: cover;
   border-radius: 10px;
   display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.cs-hero-img img.loaded {
+  opacity: 1;
 }
 
 /* ── META INFO ── */

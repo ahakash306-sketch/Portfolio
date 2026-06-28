@@ -184,6 +184,11 @@ nav {
 
 .hero-slider::-webkit-scrollbar { display: none; }
 
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 .slide-card {
   min-width: 420px;
   height: 320px;
@@ -191,7 +196,9 @@ nav {
   overflow: hidden;
   scroll-snap-align: start;
   position: relative;
-  background: var(--surface);
+  background: linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
   border: 1px solid var(--border);
   flex-shrink: 0;
   display: flex;
@@ -205,6 +212,12 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide-card .slide-img.loaded {
+  opacity: 1;
 }
 
 

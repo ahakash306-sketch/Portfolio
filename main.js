@@ -20,6 +20,15 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
+// Slide images — shimmer until loaded, then fade in
+document.querySelectorAll('.slide-img').forEach(img => {
+  if (img.complete && img.naturalWidth > 0) {
+    img.classList.add('loaded');
+  } else {
+    img.addEventListener('load', () => img.classList.add('loaded'));
+  }
+});
+
 // Journey expand
 const journeyBtn = document.getElementById('journeyBtn');
 if (journeyBtn) {

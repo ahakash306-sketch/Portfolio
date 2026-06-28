@@ -320,8 +320,6 @@ footer {
   height: 64px;
   width: auto;
   display: block;
-  opacity: 0.85;
-  filter: brightness(100);
 }
 
 /* ── NDA CARD ── */
@@ -394,8 +392,8 @@ footer {
 /* Tablet */
 @media (max-width: 1024px) {
   .cs-hero-card { grid-template-columns: 1fr; height: auto; }
+  .cs-hero-img { order: -1; height: 280px; padding: 12px; }
   .cs-hero-text { padding: 48px 40px; }
-  .cs-hero-img { height: 280px; padding: 12px; }
 
   .cs-meta-grid { column-gap: 40px; row-gap: 32px; }
 

@@ -189,6 +189,36 @@ nav {
   100% { background-position: -200% 0; }
 }
 
+/* Universal image fade-in */
+img {
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+img.loaded {
+  opacity: 1;
+}
+
+/* Shimmer on image containers while loading */
+.slide-card:not(.img-ready),
+.project-img:not(.img-ready),
+.about-photo-wrap:not(.img-ready),
+.impact-card-img:not(.img-ready),
+.cs-outcome-img:not(.img-ready),
+.cs-client-logo:not(.img-ready) {
+  background: linear-gradient(90deg, #1a1a1a 25%, #252525 50%, #1a1a1a 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+.slide-card.img-ready,
+.project-img.img-ready,
+.about-photo-wrap.img-ready,
+.impact-card-img.img-ready,
+.cs-outcome-img.img-ready,
+.cs-client-logo.img-ready {
+  animation: none;
+  background: none;
+}
+
 .slide-card {
   min-width: 420px;
   height: 320px;

@@ -20,14 +20,17 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-// Slide images — shimmer until loaded, then fade in
-document.querySelectorAll('.slide-img').forEach(img => {
-  if (img.complete && img.naturalWidth > 0) {
+// Universal image shimmer + fade-in
+function initImg(img) {
+  const parent = img.parentElement;
+  function onLoaded() {
     img.classList.add('loaded');
-  } else {
-    img.addEventListener('load', () => img.classList.add('loaded'));
+    if (parent) parent.classList.add('img-ready');
   }
-});
+  if (img.complete && img.naturalWidth > 0) { onLoaded(); return; }
+  img.addEventListener('load', onLoaded);
+}
+document.querySelectorAll('img').forEach(initImg);
 
 // Journey expand
 const journeyBtn = document.getElementById('journeyBtn');

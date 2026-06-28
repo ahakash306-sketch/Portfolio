@@ -171,11 +171,6 @@
         }
         const heroImg = document.getElementById('cs-hero-img');
         heroImg.alt = cs.hero.imageAlt;
-        heroImg.addEventListener('load', () => {
-          heroImg.classList.add('loaded');
-          heroImg.parentElement.style.animation = 'none';
-          heroImg.parentElement.style.background = 'none';
-        });
         heroImg.src = cs.hero.image;
 
         document.getElementById('cs-meta-grid').innerHTML = cs.meta.map(m => `
@@ -216,6 +211,18 @@
         } else {
           document.getElementById('cs-clients').style.display = 'none';
         }
+
+        // Universal image shimmer + fade-in (runs after dynamic content injected)
+        function initImg(img) {
+          const parent = img.parentElement;
+          function onLoaded() {
+            img.classList.add('loaded');
+            if (parent) parent.classList.add('img-ready');
+          }
+          if (img.complete && img.naturalWidth > 0) { onLoaded(); return; }
+          img.addEventListener('load', onLoaded);
+        }
+        document.querySelectorAll('img').forEach(initImg);
 
         const observer = new IntersectionObserver((entries) => {
           entries.forEach(entry => {

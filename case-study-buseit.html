@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BUSEit. MVP 0–1 | Akash Hossain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="case-study.css" />
+  <link rel="stylesheet" href="case-study-buseit.css" />
+</head>
+<body>
+
+  <nav></nav>
+
+  <!-- HERO CARD -->
+  <section id="cs-hero">
+    <div class="container">
+      <div class="cs-hero-card">
+        <div class="cs-hero-text">
+          <div>
+            <p class="cs-hero-tag">MVP · Zero to One</p>
+            <h1 class="cs-hero-headline">BUSE<span class="accent">it.</span></h1>
+            <p class="cs-hero-sub">Buy it. Use it. Sell it. — A trust-first resale marketplace designed to remove fraud, friction, and fear from second-hand commerce in India.</p>
+          </div>
+          <div class="cs-hero-links">
+            <a href="#" class="cs-hero-link">
+              <span>View MVP Prototype</span>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="cs-hero-img">
+          <img id="buseit-hero-img" src="images/buseit-hero.jpg" alt="BUSEit App" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- META INFO -->
+  <section id="cs-meta">
+    <div class="container">
+      <div class="cs-meta-grid">
+        <div class="cs-meta-item">
+          <p class="cs-meta-label">Industry</p>
+          <p class="cs-meta-value">C2C Marketplace / Resale Commerce</p>
+        </div>
+        <div class="cs-meta-item">
+          <p class="cs-meta-label">Core Constraint</p>
+          <p class="cs-meta-value">Speed with zero compromise on trust design</p>
+        </div>
+        <div class="cs-meta-item">
+          <p class="cs-meta-label">Platform</p>
+          <p class="cs-meta-value">iOS &amp; Android (Mobile-first)</p>
+        </div>
+        <div class="cs-meta-item">
+          <p class="cs-meta-label">Timeline</p>
+          <p class="cs-meta-value">4 Weeks</p>
+        </div>
+        <div class="cs-meta-item">
+          <p class="cs-meta-label">Stage</p>
+          <p class="cs-meta-value">Zero to One MVP</p>
+        </div>
+        <div class="cs-meta-item">
+          <p class="cs-meta-label">My Role</p>
+          <p class="cs-meta-value">UI/UX Designer &amp; PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-PHONES SHOWCASE -->
+  <section id="buseit-phones">
+    <div class="container">
+      <div class="buseit-phones-img">
+        <img src="images/buseit-phones.jpg" alt="BUSEit App Screens" />
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PROBLEM -->
+  <section id="buseit-problem">
+    <div class="container">
+      <p class="buseit-section-label">the problem</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">Resale in India has a trust crisis.</h2>
+      </div>
+      <div class="buseit-problem-text">
+        <p>Platforms like OLX, Quikr, and Facebook Marketplace have unlocked a massive market for second-hand goods in India. But they've also created a breeding ground for fraud. Fake listings. Stolen photos. Payment scams. Robbery during physical meetups.</p>
+        <p>The process hasn't changed in years. A seller lists something. A buyer wants it. They either ship it blindly and hope for the best — or they physically meet up in a parking lot and hope nobody gets robbed. Neither option inspires confidence.</p>
+        <p>What should be simple — "I have something I don't need, you want it" — becomes complicated, risky, and often abandoned altogether.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAT CARDS -->
+  <section id="buseit-stats">
+    <div class="container">
+      <div class="buseit-stats-grid">
+        <div class="buseit-stat-card">
+          <div class="buseit-stat-num">4%+</div>
+          <p class="buseit-stat-desc">of marketplace revenue is lost to seller fraud and fraudulent listings on peer-to-peer platforms globally</p>
+          <p class="buseit-stat-source">Source: Payoneer Marketplace Report</p>
+        </div>
+        <div class="buseit-stat-card">
+          <div class="buseit-stat-num">750+</div>
+          <p class="buseit-stat-desc">crimes traced to a single OLX fraud network in India over just 18 months, exposing how organised the scams have become</p>
+          <p class="buseit-stat-source">Source: The420.In, 2022</p>
+        </div>
+        <div class="buseit-stat-card">
+          <div class="buseit-stat-num">3M+</div>
+          <p class="buseit-stat-desc">daily active users on OLX India — a scale that makes fraud prevention not optional, but existential</p>
+          <p class="buseit-stat-source">Source: OLX India Engineering Blog</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAUD PATTERNS -->
+  <section id="buseit-fraud">
+    <div class="container">
+      <p class="buseit-fraud-label">Common fraud patterns on existing platforms</p>
+      <div class="buseit-fraud-grid">
+
+        <div class="buseit-fraud-card">
+          <div class="buseit-fraud-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5" fill="currentColor" stroke="none"/><path d="M21 15l-5-5L5 21"/>
+            </svg>
+          </div>
+          <p class="buseit-fraud-title">Fake Listings with Stolen Photos</p>
+          <p class="buseit-fraud-desc">Fraudsters steal product images from real listings, post them at attractive prices, collect a "reservation deposit," and vanish. Buyers lose money before they've even seen the product.</p>
+        </div>
+
+        <div class="buseit-fraud-card">
+          <div class="buseit-fraud-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+            </svg>
+          </div>
+          <p class="buseit-fraud-title">Courier &amp; Advance Payment Scams</p>
+          <p class="buseit-fraud-desc">Scammers use fake courier receipts to pressure buyers into paying delivery fees upfront. No product ever ships. The courier company doesn't exist.</p>
+        </div>
+
+        <div class="buseit-fraud-card">
+          <div class="buseit-fraud-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <p class="buseit-fraud-title">Physical Meetup Robbery</p>
+          <p class="buseit-fraud-desc">OLX's own workaround — meet in person — created its own danger. Buyers carrying cash to inspect high-value items like phones or bikes became targets for robbery and assault.</p>
+        </div>
+
+        <div class="buseit-fraud-card">
+          <div class="buseit-fraud-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+          </div>
+          <p class="buseit-fraud-title">Fake Payment Confirmations</p>
+          <p class="buseit-fraud-desc">Fraudulent buyers send forged payment screenshots to sellers, pressure them to ship first, then disappear. Sellers hand over the product and never see the money.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THE BRIEF -->
+  <section id="buseit-brief">
+    <div class="container">
+      <p class="buseit-section-label">the brief</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">Build the trust layer<br>that resale was missing</h2>
+      </div>
+      <div class="buseit-brief-text">
+        <p>The ask was clear: design a resale marketplace where neither buyers nor sellers have to trust a stranger — because the platform does the trusting for them. No physical meetups. No payment anxiety. No fake listings.</p>
+        <p>The constraints were tight. Four weeks. One person handling both design and project management. No time for long iteration cycles — but no shortcuts on the thinking.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & THINKING -->
+  <section id="buseit-research">
+    <div class="container">
+      <p class="buseit-section-label">research &amp; thinking</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">Every step mapped.<br>Every edge case considered.</h2>
+      </div>
+      <p class="buseit-intro-text">We started where all good design starts — with people. Not assumptions about people. Actual people. Two distinct types of personas, two entirely different relationships with resale.</p>
+
+      <div class="buseit-step">
+        <span class="buseit-step-num">01</span>
+        <div>
+          <p class="buseit-step-title">User Personas — Buyer &amp; Seller</p>
+          <p class="buseit-step-desc">Sellers here aren't mass merchants. They're someone whose baby has outgrown a toy, someone upgrading their phone, someone clearing out a room. They're listing one product, maybe two. The flow needed to feel as simple as sending a WhatsApp message. Buyers, on the other hand, want assurance — they're looking for a deal, but not a gamble. Both personas shaped every design decision that followed.</p>
+        </div>
+      </div>
+
+      <!-- PERSONA CAROUSEL -->
+      <div class="buseit-persona-outer">
+        <div class="buseit-persona-track" id="personaTrack" style="gap:0">
+
+          <!-- 1. Rohan Mehta – SELLER -->
+          <div class="persona-card persona-seller">
+            <div class="persona-photo">
+              <img src="images/buseit-p-rohan.jpg" alt="Rohan Mehta" />
+            </div>
+            <div class="persona-detail">
+              <div class="persona-col-left">
+                <div class="persona-name">Rohan Mehta <span class="persona-badge">(SELLER)</span></div>
+                <p class="persona-job">Assistant Manager, Consulting Firm</p>
+                <div class="persona-meta-row">
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>Gurgaon (DLF Phase 3)</span>
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Age 32</span>
+                  <span>Single</span>
+                </div>
+                <p class="persona-quote">I just want to sell my stuff without wasting my time talking to random people.</p>
+                <p class="persona-sub-title">About</p>
+                <p class="persona-about-text">Rohan is a busy corporate professional who upgrades his gadgets frequently. He values speed and convenience and expects app-based services to do the heavy lifting for him.</p>
+                <p class="persona-sub-title">Everyday Activities</p>
+                <ul class="persona-list">
+                  <li>Works long hours</li>
+                  <li>Orders groceries and food online</li>
+                  <li>Scrolls Instagram and LinkedIn</li>
+                  <li>Uses Uber, Amazon, Blinkit daily</li>
+                </ul>
+                <p class="persona-sub-title">Motivations</p>
+                <div class="persona-motivations">
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5L2 8h4.5V14.5L14 8H9.5z"/></svg></div><span class="persona-mot-label">Peace of mind</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3.5l2 2"/></svg></div><span class="persona-mot-label">Time saving</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 5L6.5 11.5 3 8"/></svg></div><span class="persona-mot-label">Simplicity over maximum profit</span></div>
+                </div>
+              </div>
+              <div class="persona-col-right">
+                <p class="persona-sub-title">Goals &amp; Needs</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5L2 8h4.5V14.5L14 8H9.5z"/></svg>Sell gadgets quickly</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 7.5c0 3.3-2.7 6-6 6a5.9 5.9 0 0 1-2.9-.8L2 14l1.3-3.1A5.9 5.9 0 0 1 2 7.5c0-3.3 2.7-6 6-6s6 2.7 6 6z"/></svg>Avoid unnecessary chats</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/></svg>Secure, guaranteed payments</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 4h10v8H1z"/><path d="M11 6h2l2 2v4h-4V6z"/><circle cx="3.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/></svg>Home pickup without coordination</li>
+                </ul>
+                <p class="persona-sub-title">Frustrations</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fake buyers and time passers</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Lowball offers</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fear of payment fraud</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Unsafe stranger meetups</li>
+                </ul>
+                <p class="persona-sub-title">Device Usage</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="1" width="8" height="14" rx="1.5"/><circle cx="8" cy="12.5" r=".75" fill="currentColor" stroke="none"/></svg>Mobile heavy user</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="2" width="10" height="7" rx="1"/><rect x="5" y="2" width="10" height="7" rx="1"/></svg>Android/iPhone</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="8,2 10,6.5 15,6.5 11,9.5 12.5,14 8,11 3.5,14 5,9.5 1,6.5 6,6.5"/></svg>Moderate tech knowledge</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Karan Singh – BUYER -->
+          <div class="persona-card persona-buyer">
+            <div class="persona-photo">
+              <img src="images/buseit-p-karan.jpg" alt="Karan Singh" />
+            </div>
+            <div class="persona-detail">
+              <div class="persona-col-left">
+                <div class="persona-name">Karan Singh <span class="persona-badge">(BUYER)</span></div>
+                <p class="persona-job">BBA Student</p>
+                <div class="persona-meta-row">
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>Gurgaon (PG)</span>
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Age 24</span>
+                  <span>Single</span>
+                </div>
+                <p class="persona-quote">I want premium tech, but I can't trust random sellers.</p>
+                <p class="persona-sub-title">About</p>
+                <p class="persona-about-text">Karan actively hunts for deals. He's price-sensitive and tech-aware but fears fake or stolen devices.</p>
+                <p class="persona-sub-title">Everyday Activities</p>
+                <ul class="persona-list">
+                  <li>Scrolling deal forums</li>
+                  <li>Comparing prices</li>
+                  <li>Gaming and streaming</li>
+                  <li>Student group chats</li>
+                </ul>
+                <p class="persona-sub-title">Motivations</p>
+                <div class="persona-motivations">
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 13.5c-3 0-5.5-2.5-5.5-5.5S5 2.5 8 2.5s5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5z"/><path d="M8 5.5v3l1.5 1.5"/></svg></div><span class="persona-mot-label">Save money</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M5 13v2M11 13v2M3 15h10"/></svg></div><span class="persona-mot-label">Access premium gadgets</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 10L6 14l8-8"/></svg></div><span class="persona-mot-label">Smarter spending habits</span></div>
+                </div>
+              </div>
+              <div class="persona-col-right">
+                <p class="persona-sub-title">Goals &amp; Needs</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M5 13v2M11 13v2M3 15h10"/></svg>Working premium devices</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/><path d="M5.5 8l2 2 3-3"/></svg>Verified specs</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h10l1 12H2L3 2z"/><path d="M6 2V1M10 2V1M5 6h6M5 9h4"/></svg>Warranty/invoice proof</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 4h10v8H1z"/><path d="M11 6h2l2 2v4h-4V6z"/><circle cx="3.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/></svg>Affordable, insured delivery</li>
+                </ul>
+                <p class="persona-sub-title">Frustrations</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fake listings</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>No proof of authenticity</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Risky payments</li>
+                </ul>
+                <p class="persona-sub-title">Device Usage</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="1" width="8" height="14" rx="1.5"/><circle cx="8" cy="12.5" r=".75" fill="currentColor" stroke="none"/></svg>Heavy mobile user</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M5 13v2M11 13v2M3 15h10"/></svg>Laptop for studies</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Neha Sharma – SELLER -->
+          <div class="persona-card persona-seller">
+            <div class="persona-photo">
+              <img src="images/buseit-p-neha.jpg" alt="Neha Sharma" />
+            </div>
+            <div class="persona-detail">
+              <div class="persona-col-left">
+                <div class="persona-name">Neha Sharma <span class="persona-badge">(SELLER)</span></div>
+                <p class="persona-job">Part-time Interior Stylist</p>
+                <div class="persona-meta-row">
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>Gurgaon (Sector 57)</span>
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Age 38</span>
+                  <span>Married, 2 Kids</span>
+                </div>
+                <p class="persona-quote">I just want the extra stuff gone without inviting strangers into my home.</p>
+                <p class="persona-sub-title">About</p>
+                <p class="persona-about-text">Neha is a busy mother managing both work and home. She regularly declutters but feels unsafe and overwhelmed by selling platforms.</p>
+                <p class="persona-sub-title">Everyday Activities</p>
+                <ul class="persona-list">
+                  <li>School drops and pickups</li>
+                  <li>WhatsApp and Instagram browsing</li>
+                  <li>Online grocery ordering</li>
+                  <li>Parenting groups interaction</li>
+                </ul>
+                <p class="persona-sub-title">Motivations</p>
+                <div class="persona-motivations">
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2L2 6v8h4v-4h4v4h4V6L8 2z"/></svg></div><span class="persona-mot-label">Organized home</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2c-2 0-3.5 1.5-3.5 3.5 0 1.5 1 2.5 2 3L8 14l1.5-5.5c1-.5 2-1.5 2-3C11.5 3.5 10 2 8 2z"/></svg></div><span class="persona-mot-label">Extra cash</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/></svg></div><span class="persona-mot-label">Safe and trusted process</span></div>
+                </div>
+              </div>
+              <div class="persona-col-right">
+                <p class="persona-sub-title">Goals &amp; Needs</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/></svg>Safely sell baby products</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2L2 6v8h4v-4h4v4h4V6L8 2z"/></svg>No home visits</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h8M4 5h5M4 11h6"/></svg>Easy price guidance</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 4h10v8H1z"/><path d="M11 6h2l2 2v4h-4V6z"/><circle cx="3.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/></svg>Hassle-free pickups</li>
+                </ul>
+                <p class="persona-sub-title">Frustrations</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Safety concerns</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Confusing pricing</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Heavy item handling</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Repeated buyer questions</li>
+                </ul>
+                <p class="persona-sub-title">Device Usage</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="1" width="8" height="14" rx="1.5"/></svg>Smartphone primary</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 7.5c0 3.3-2.7 6-6 6a5.9 5.9 0 0 1-2.9-.8L2 14l1.3-3.1A5.9 5.9 0 0 1 2 7.5c0-3.3 2.7-6 6-6s6 2.7 6 6z"/></svg>WhatsApp heavy user</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="8,2 10,6.5 15,6.5 11,9.5 12.5,14 8,11 3.5,14 5,9.5 1,6.5 6,6.5"/></svg>Average tech comfort</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Ritu Malhotra – BUYER -->
+          <div class="persona-card persona-buyer">
+            <div class="persona-photo">
+              <img src="images/buseit-p-ritu.jpg" alt="Ritu Malhotra" />
+            </div>
+            <div class="persona-detail">
+              <div class="persona-col-left">
+                <div class="persona-name">Ritu Malhotra <span class="persona-badge">(BUYER)</span></div>
+                <p class="persona-job">Homemaker (Ex-Teacher)</p>
+                <div class="persona-meta-row">
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>Gurgaon</span>
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Age 34</span>
+                  <span>Married</span>
+                </div>
+                <p class="persona-quote">I don't mind secondhand, but I need to feel completely safe.</p>
+                <p class="persona-sub-title">About</p>
+                <p class="persona-about-text">Ritu is budget-conscious but quality-focused. She only buys when she feels secure about product condition and safety.</p>
+                <p class="persona-sub-title">Everyday Activities</p>
+                <ul class="persona-list">
+                  <li>YouTube browsing</li>
+                  <li>WhatsApp family groups</li>
+                  <li>Online grocery orders</li>
+                  <li>Kids' schedule management</li>
+                </ul>
+                <p class="persona-sub-title">Motivations</p>
+                <div class="persona-motivations">
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 13.5c-3 0-5.5-2.5-5.5-5.5S5 2.5 8 2.5s5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5z"/></svg></div><span class="persona-mot-label">Family savings</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2L2 6v8h4v-4h4v4h4V6L8 2z"/></svg></div><span class="persona-mot-label">Safe home environment</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h10l1 12H2L3 2z"/><path d="M6 6a2 2 0 0 0 4 0"/></svg></div><span class="persona-mot-label">Hassle-free buying</span></div>
+                </div>
+              </div>
+              <div class="persona-col-right">
+                <p class="persona-sub-title">Goals &amp; Needs</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/></svg>Safe, verified products</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h8M4 5h5M4 11h6"/></svg>Clean and honest condition info</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>No seller interaction</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="7" width="8" height="8" rx="1"/><path d="M5 7V5a3 3 0 0 1 6 0v2"/></svg>Secure checkout</li>
+                </ul>
+                <p class="persona-sub-title">Frustrations</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fake photos</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fear of scams</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Poor communication</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>No return safety</li>
+                </ul>
+                <p class="persona-sub-title">Device Usage</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="1" width="8" height="14" rx="1.5"/></svg>Smartphone only</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h10l1 12H2L3 2z"/><path d="M6 6a2 2 0 0 0 4 0"/></svg>Social + e-commerce heavy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Arjun Kapoor – SELLER -->
+          <div class="persona-card persona-seller">
+            <div class="persona-photo">
+              <img src="images/buseit-p-arjun.jpg" alt="Arjun Kapoor" />
+            </div>
+            <div class="persona-detail">
+              <div class="persona-col-left">
+                <div class="persona-name">Arjun Kapoor <span class="persona-badge">(SELLER)</span></div>
+                <p class="persona-job">Freelance Video Editor</p>
+                <div class="persona-meta-row">
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>South Delhi</span>
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Age 26</span>
+                  <span>Single</span>
+                </div>
+                <p class="persona-quote">If the money isn't secure, I'm not selling.</p>
+                <p class="persona-sub-title">About</p>
+                <p class="persona-about-text">Arjun flips gadgets as a side hustle. He understands tech and cares deeply about secure transactions and verified buyers.</p>
+                <p class="persona-sub-title">Everyday Activities</p>
+                <ul class="persona-list">
+                  <li>Gaming and streaming</li>
+                  <li>Editing and posting content</li>
+                  <li>Monitoring gadget prices</li>
+                  <li>Using Telegram deal groups</li>
+                </ul>
+                <p class="persona-sub-title">Motivations</p>
+                <div class="persona-motivations">
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2c-2 0-3.5 1.5-3.5 3.5 0 1.5 1 2.5 2 3L8 14l1.5-5.5c1-.5 2-1.5 2-3C11.5 3.5 10 2 8 2z"/></svg></div><span class="persona-mot-label">Extra income</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5L2 8h4.5V14.5L14 8H9.5z"/></svg></div><span class="persona-mot-label">Speed of transactions</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/><path d="M5.5 8l2 2 3-3"/></svg></div><span class="persona-mot-label">Reputation as trusted seller</span></div>
+                </div>
+              </div>
+              <div class="persona-col-right">
+                <p class="persona-sub-title">Goals &amp; Needs</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5L2 8h4.5V14.5L14 8H9.5z"/></svg>Fast resales</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/></svg>Zero fraud risk</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1h14v10H1zM5 14h6M8 11v3"/></svg>Verified condition display</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="7" width="8" height="8" rx="1"/><path d="M5 7V5a3 3 0 0 1 6 0v2"/></svg>Escrow payments</li>
+                </ul>
+                <p class="persona-sub-title">Frustrations</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fake UPI screenshots</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Endless buyer doubts</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Time wasted in meetups</li>
+                </ul>
+                <p class="persona-sub-title">Device Usage</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="1" width="8" height="14" rx="1.5"/></svg>Power mobile user</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M5 13v2M11 13v2M3 15h10"/></svg>Laptop heavy usage</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="8,2 10,6.5 15,6.5 11,9.5 12.5,14 8,11 3.5,14 5,9.5 1,6.5 6,6.5"/></svg>Advanced tech familiarity</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Meera Jain – BUYER -->
+          <div class="persona-card persona-buyer">
+            <div class="persona-photo">
+              <img src="images/buseit-p-meera.jpg" alt="Meera Jain" />
+            </div>
+            <div class="persona-detail">
+              <div class="persona-col-left">
+                <div class="persona-name">Meera Jain <span class="persona-badge">(BUYER)</span></div>
+                <p class="persona-job">Digital Marketing Executive</p>
+                <div class="persona-meta-row">
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1.5C5.5 1.5 3.5 3.5 3.5 6c0 3.5 4.5 8.5 4.5 8.5S12.5 9.5 12.5 6c0-2.5-2-4.5-4.5-4.5z"/><circle cx="8" cy="6" r="1.5"/></svg>East Delhi</span>
+                  <span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Age 30</span>
+                  <span>Married</span>
+                </div>
+                <p class="persona-quote">If this feels like Amazon, I can trust it.</p>
+                <p class="persona-sub-title">About</p>
+                <p class="persona-about-text">Meera is very new to secondhand buying and expects a familiar, clean e-commerce experience.</p>
+                <p class="persona-sub-title">Everyday Activities</p>
+                <ul class="persona-list">
+                  <li>Instagram and Pinterest scrolling</li>
+                  <li>Online shopping</li>
+                  <li>Watching home décor reels</li>
+                  <li>Saving ideas on phone</li>
+                </ul>
+                <p class="persona-sub-title">Motivations</p>
+                <div class="persona-motivations">
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 13.5c-3 0-5.5-2.5-5.5-5.5S5 2.5 8 2.5s5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5z"/></svg></div><span class="persona-mot-label">Save on home setup</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1c3.9 0 7 3.1 7 7s-3.1 7-7 7-7-3.1-7-7 3.1-7 7-7zM5 8l2 2 4-4"/></svg></div><span class="persona-mot-label">Try sustainable buying</span></div>
+                  <div class="persona-mot-item"><div class="persona-mot-icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1L2 4v4c0 3.7 2.6 7.1 6 8 3.4-.9 6-4.3 6-8V4L8 1z"/></svg></div><span class="persona-mot-label">Wants to feel confident</span></div>
+                </div>
+              </div>
+              <div class="persona-col-right">
+                <p class="persona-sub-title">Goals &amp; Needs</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 2h10l1 12H2L3 2z"/><path d="M6 6a2 2 0 0 0 4 0"/></svg>Familiar shopping experience</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>Zero interaction with sellers</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 5L6.5 11.5 3 8"/></svg>Clean, verified items</li>
+                  <li><svg class="persona-goal-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1c4 0 7 3 7 7s-3 7-7 7-7-3-7-7 3-7 7-7zM5 8l2 2 4-4"/></svg>Simple problem resolution</li>
+                </ul>
+                <p class="persona-sub-title">Frustrations</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Marketplace clutter</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Strange buyers/sellers messaging</li>
+                  <li><svg class="persona-frus-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M10 6L6 10M6 6l4 4"/></svg>Fear of hygiene issues</li>
+                </ul>
+                <p class="persona-sub-title">Device Usage</p>
+                <ul class="persona-icon-list">
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="1" width="8" height="14" rx="1.5"/></svg>Smartphone-first</li>
+                  <li><svg class="persona-dev-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 12l4-8h10l-4 8z"/><path d="M1 12h10"/></svg>High social media usage</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /track -->
+
+        <div class="buseit-persona-nav">
+          <button class="persona-nav-btn" id="personaPrev" aria-label="Previous">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M11 4L6 9l5 5"/></svg>
+          </button>
+          <button class="persona-nav-btn" id="personaNext" aria-label="Next">
+            <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 4l5 5-5 5"/></svg>
+          </button>
+        </div>
+      </div><!-- /persona-outer -->
+
+      <div class="buseit-step" style="margin-top:56px">
+        <span class="buseit-step-num">02</span>
+        <div>
+          <p class="buseit-step-title">Full User Flow Mapping</p>
+          <p class="buseit-step-desc">We mapped every journey — seller onboarding, product listing, buyer search, purchase, internal verification, logistics handoff, post-delivery inspection, returns, refunds, edge cases. What happens if a seller cancels after verification? What if a buyer raises a dispute at hour 47? We designed for the exceptions before we designed for the happy path.</p>
+        </div>
+      </div>
+
+      <div class="buseit-step">
+        <span class="buseit-step-num">03</span>
+        <div>
+          <p class="buseit-step-title">Hand Sketches &amp; Rough Wireframes</p>
+          <p class="buseit-step-desc">No low-fidelity digital wireframes. The time constraint was real, and the flow clarity was already there. We hand-sketched the critical screens, mapped the interactions, and moved fast into high-fidelity. Pragmatic — not lazy. The thinking happened on paper. The execution happened in Figma.</p>
+        </div>
+      </div>
+
+      <div class="buseit-step">
+        <span class="buseit-step-num">04</span>
+        <div>
+          <p class="buseit-step-title">Brand Foundation — Colour, Type, Logo</p>
+          <p class="buseit-step-desc">Before touching product screens, we established the visual language. Colour palette, typography, logo — enough to make the product feel coherent and trustworthy without spending weeks on brand strategy. For a resale marketplace, visual trust signals matter. The brand needed to communicate reliability, not just aesthetics.</p>
+        </div>
+      </div>
+
+      <div class="buseit-step">
+        <span class="buseit-step-num">05</span>
+        <div>
+          <p class="buseit-step-title">High-Fidelity Execution</p>
+          <p class="buseit-step-desc">Straight from brand foundation to high-fidelity screens. 70+ screens covering every user journey, every state, every edge case. Built to be handed off, not just presented.</p>
+        </div>
+      </div>
+
+      <div class="buseit-highlight">
+        <p class="buseit-highlight-quote">DigiLocker integration wasn't just a feature decision — it was the single move that solved the biggest design problem in the product: how do you trust a stranger on the internet?</p>
+        <p class="buseit-highlight-sub">DigiLocker holds verified government documents for Indian citizens. By requiring seller verification through DigiLocker, we established real identity and real accountability — without building complex verification logic from scratch.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- THE DESIGN -->
+  <section id="buseit-design">
+    <div class="container">
+      <p class="cs-section-label">the design</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">The trust layer, designed screen by screen.</h2>
+      </div>
+
+      <p style="font-size:15px;color:rgba(255,255,255,0.7);line-height:1.85;max-width:680px;margin-bottom:0;">Every screen had one job: remove a reason to distrust. For sellers, that meant a listing flow that felt guided, not overwhelming. For buyers, it meant surfacing the safety mechanisms — verification badge, escrow status, inspection window — at every decision point.</p>
+
+      <div class="buseit-big-stat">
+        <div class="buseit-big-stat-num">70+</div>
+        <div>
+          <div class="buseit-big-stat-title">Screens designed across all user journeys</div>
+          <p class="buseit-big-stat-desc">From seller onboarding to post-delivery resolution — every flow, every state, every edge case. Built to be shipped, not just demonstrated.</p>
+        </div>
+      </div>
+
+      <div class="buseit-design-grid">
+
+        <!-- 1 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 2L4 5v5c0 4.1 2.6 7.9 6 9 3.4-1.1 6-4.9 6-9V5L10 2z"/>
+              <path d="M7 10l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Seller Onboarding &amp; DigiLocker Verification</div>
+          <p class="buseit-design-desc">Identity verification via government-issued documents. No fake sellers. No fake products. Real accountability from the first screen.</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="4" width="14" height="12" rx="2"/>
+              <path d="M7 8h6M7 11h4" stroke-linecap="round"/>
+              <circle cx="15" cy="5" r="2.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Product Listing Flow</div>
+          <p class="buseit-design-desc">Guided listing for non-technical sellers. Photos, condition, price range. Simple enough for someone listing their first and only product.</p>
+        </div>
+
+        <!-- 3 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="9" cy="9" r="5"/>
+              <path d="M15 15l-3-3" stroke-linecap="round"/>
+              <path d="M9 7v2l1.5 1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Buyer Search &amp; Discovery</div>
+          <p class="buseit-design-desc">Browse, filter, and find verified products. Every seller carries the BUSEit verification badge — proof someone from our team has seen it.</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="6" width="14" height="10" rx="2"/>
+              <path d="M7 6V5a3 3 0 016 0v1"/>
+              <circle cx="10" cy="11" r="1.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Purchase &amp; Escrow Flow</div>
+          <p class="buseit-design-desc">Buyer pays. Money holds in escrow. Nobody gets paid until the buyer confirms the product is what was promised. Trust built into the transaction itself.</p>
+        </div>
+
+        <!-- 5 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="10" cy="10" r="7"/>
+              <path d="M7 10l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Physical Verification (Internal)</div>
+          <p class="buseit-design-desc">Our team visits the seller, verifies the product against the listing. Condition check. Authenticity check. Only then does it move to the buyer.</p>
+        </div>
+
+        <!-- 6 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M10 3v4M10 13v4M10 3a7 7 0 100 14 7 7 0 000-14z"/>
+              <path d="M10 8v4" stroke-linecap="round" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">48-Hour Inspection Window</div>
+          <p class="buseit-design-desc">Buyer gets 48 hours to inspect the product. If it doesn't match the listing — return it. Money goes back. Seller keeps accountability.</p>
+        </div>
+
+        <!-- 7 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 10c0-3.3 2.7-6 6-6 2.2 0 4.1 1.2 5.2 3"/>
+              <path d="M16 10c0 3.3-2.7 6-6 6-2.2 0-4.1-1.2-5.2-3"/>
+              <path d="M14 7l1.2-3 1.8 2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M6 13L4.8 16 3 13.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Returns &amp; Refund Flow</div>
+          <p class="buseit-design-desc">Structured return process. We collect, we refund, we close the loop. No he-said-she-said. No ghosting. Just a clear resolution path.</p>
+        </div>
+
+        <!-- 8 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M3 9l7-6 7 6v9a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/>
+              <rect x="7" y="11" width="6" height="7" rx="1"/>
+              <path d="M10 11v7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Logistics &amp; Order Tracking</div>
+          <p class="buseit-design-desc">Full visibility from pickup to delivery. Buyers always know where their product is. Sellers know when their money is coming.</p>
+        </div>
+
+        <!-- 9 -->
+        <div class="buseit-design-card">
+          <div class="buseit-design-icon">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="10" cy="10" r="7"/>
+              <path d="M10 7v4" stroke-linecap="round" stroke-width="1.8"/>
+              <circle cx="10" cy="14" r="0.8" fill="currentColor" stroke="none"/>
+            </svg>
+          </div>
+          <div class="buseit-design-title">Edge Cases &amp; Error States</div>
+          <p class="buseit-design-desc">Seller cancellations, failed verifications, payment disputes, late inspections. Every scenario designed — because real users don't always follow the happy path.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES: WHAT SHIPPED / WHAT'S NEXT -->
+  <section id="buseit-features">
+    <div class="container">
+      <p class="cs-section-label">features</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">What shipped. What's next. And why.</h2>
+      </div>
+
+      <p class="buseit-features-intro">A good MVP isn't about building less. It's about building the right thing first. <strong>Version 1</strong> focused entirely on getting the trust mechanics right. Everything else was designed, thought through, and deliberately deferred.</p>
+
+      <div class="buseit-features-cols">
+        <!-- V1 Shipped -->
+        <div class="buseit-features-col">
+          <span class="buseit-features-badge badge-shipped">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="6" fill="#34c759" opacity="0.2"/><path d="M3.5 6l2 2 3-3" stroke="#34c759" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Version 1 — Shipped
+          </span>
+          <ul class="buseit-check-list" style="list-style:none;padding:0;margin:0;">
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Seller onboarding with DigiLocker identity verification
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Guided product listing (photos, condition, price range)
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Buyer search, filtering, and discovery
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Purchase flow with escrow payment protection
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Physical product verification (internal team workflow)
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              48-hour buyer inspection window
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Returns and structured refund process
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Full logistics and order tracking
+            </li>
+            <li class="buseit-check-item">
+              <svg class="buseit-check-icon green" viewBox="0 0 22 22" fill="none"><circle cx="11" cy="11" r="10" fill="rgba(52,199,89,0.12)" stroke="rgba(52,199,89,0.4)" stroke-width="1"/><path d="M7 11l3 3 5-5" stroke="#34c759" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Edge cases, error states, and exception flows
+            </li>
+          </ul>
+        </div>
+
+        <!-- V2 Deferred -->
+        <div class="buseit-features-col">
+          <span class="buseit-features-badge badge-deferred">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="6" fill="#a78bfa" opacity="0.2"/><path d="M6 3v3l2 2" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round"/></svg>
+            Version 2 — Designed, Deferred
+          </span>
+          <div>
+            <div class="buseit-defer-item">
+              <div class="buseit-defer-dot"></div>
+              <p><span class="buseit-defer-title">AI Image Verification</span> — Reverse image search on every uploaded product photo to detect stolen images, recycled listings, and counterfeit products.</p>
+            </div>
+            <div class="buseit-defer-item">
+              <div class="buseit-defer-dot"></div>
+              <p><span class="buseit-defer-title">Multi-Platform Listing Sync</span> — Sellers list once on BUSEit and push to other resale platforms simultaneously with a single toggle. Same caption, same photos, zero extra effort.</p>
+            </div>
+            <div class="buseit-defer-item">
+              <div class="buseit-defer-dot"></div>
+              <p><span class="buseit-defer-title">AI Predictive Pricing</span> — Sellers set a price range and a time-to-sell deadline. The system reads market trends, suggests optimal pricing, and dynamically adjusts offers.</p>
+            </div>
+            <div class="buseit-defer-item">
+              <div class="buseit-defer-dot"></div>
+              <p><span class="buseit-defer-title">Community &amp; Bidding</span> — Buyer and seller profiles, social discovery, and a bidding system for high-demand products where the highest bid in a set window wins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEY DESIGN DECISIONS -->
+  <section id="buseit-decisions">
+    <div class="container">
+      <p class="cs-section-label">key design decisions</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">The thinking behind the choices.</h2>
+      </div>
+
+      <div class="buseit-decision-item">
+        <h3 class="buseit-decision-q">Why skip low-fidelity wireframes?</h3>
+        <p class="buseit-decision-a">With four weeks and one person handling design and project management, low-fidelity wireframes would have been a third iteration of the same thinking. The user flows were mapped. The sketches were done. The value wasn't in more lo-fi artifacts — it was in getting to high-fidelity fast enough to catch real visual and interaction problems. Speed was the constraint. Clarity was already there.</p>
+      </div>
+
+      <div class="buseit-decision-item">
+        <h3 class="buseit-decision-q">Why DigiLocker for seller verification?</h3>
+        <p class="buseit-decision-a">Building a custom identity verification system would have taken time we didn't have and trust we hadn't yet earned. DigiLocker is a government-backed platform that Indian citizens already use and trust. By integrating it, we borrowed credibility from an established system rather than asking users to trust a new one. One integration solved the biggest trust bottleneck in the product.</p>
+      </div>
+
+      <div class="buseit-decision-item">
+        <h3 class="buseit-decision-q">Why make the escrow so explicit in the UI?</h3>
+        <p class="buseit-decision-a">Most platforms bury their payment protection in terms and conditions nobody reads. We made the escrow status a visible, persistent UI element throughout the buyer's journey — because if users don't know their money is protected, the protection doesn't build trust. Visible safety mechanisms change behavior. They give buyers the confidence to complete a purchase they'd otherwise abandon.</p>
+      </div>
+
+      <div class="buseit-decision-item">
+        <h3 class="buseit-decision-q">Why design V2 features in the MVP phase?</h3>
+        <p class="buseit-decision-a">Features like AI image verification and predictive pricing weren't designed to ship in V1 — they were designed to stress-test the product architecture. If you only design for what you're shipping today, you paint yourself into corners that make V2 expensive to build. Thinking through the bidding system and multi-platform sync in advance meant the V1 information architecture could accommodate them without a full redesign later.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNINGS -->
+  <section id="buseit-learnings">
+    <div class="container">
+      <p class="cs-section-label">learnings</p>
+      <div class="cs-section-header">
+        <h2 class="cs-section-title">What the process taught us.</h2>
+      </div>
+
+      <p class="buseit-learnings-intro">BUSEit is currently in QC testing — not yet live with real users. The learnings here come from the design and internal testing phase. The most valuable insights didn't come from user data. They came from the moments where the design broke under its own logic.</p>
+
+      <div class="buseit-learnings-grid">
+        <div class="buseit-learning-card">
+          <div class="buseit-learning-num">01</div>
+          <h4 class="buseit-learning-title">Constraint is a design tool.</h4>
+          <p class="buseit-learning-body">We could have added more seller options, more filter types, more customisation at every step. We didn't. The strongest decision we made repeatedly was choosing what to leave out. A listing flow with fewer fields isn't less capable — it's more usable for someone who's never sold anything online before.</p>
+        </div>
+
+        <div class="buseit-learning-card">
+          <div class="buseit-learning-num">02</div>
+          <h4 class="buseit-learning-title">DigiLocker was the right call.</h4>
+          <p class="buseit-learning-body">During design review, it became clear that building our own verification system would have introduced new trust problems while trying to solve existing ones. Leaning on an established, government-backed system meant users didn't have to trust BUSEit's verification process — they trusted something they already knew.</p>
+        </div>
+
+        <div class="buseit-learning-card">
+          <div class="buseit-learning-num">03</div>
+          <h4 class="buseit-learning-title">Edge cases are the real product.</h4>
+          <p class="buseit-learning-body">The 70+ screens didn't all feel essential at first. But mapping scenarios like "seller cancels after physical verification" or "buyer raises dispute at hour 47" revealed friction points that would have been catastrophic in the live product. The happy path is 20% of the design work. The other 80% is everything that can go wrong.</p>
+        </div>
+
+        <div class="buseit-learning-card">
+          <div class="buseit-learning-num">04</div>
+          <h4 class="buseit-learning-title">48-hour window psychology.</h4>
+          <p class="buseit-learning-body">In traditional resale, there's ambiguity around when a buyer actually commits. Making the inspection window explicit — visible, time-stamped, clearly communicated — changes the psychological contract between buyer and seller. The buyer gets to inspect before the seller gets paid. That's a fundamentally different transaction, not a feature.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NDA CARD -->
+  <section id="cs-nda">
+    <div class="container">
+      <div class="cs-nda-card">
+        <span class="cs-nda-barrier">
+          <img src="images/nda.gif" alt="Lock Icon" />
+        </span>
+        <h3 class="cs-nda-title">And that's all I can reveal here!</h3>
+        <p class="cs-nda-sub">The full story is locked away under NDA. Want to know more? Let's connect and I'll share what I can behind the scenes!</p>
+        <div class="cs-nda-actions">
+          <a href="index.html#connect" class="cs-nda-btn">Connect</a>
+          <a href="#" class="cs-nda-btn">
+            Visit Application
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.5 11.5L11.5 2.5M11.5 2.5H5.5M11.5 2.5V8.5"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer></footer>
+
+  <script src="components.js"></script>
+  <script>
+    function initImg(img) {
+      const parent = img.parentElement;
+      function onLoaded() {
+        img.classList.add('loaded');
+        if (parent) parent.classList.add('img-ready');
+      }
+      if (img.complete && img.naturalWidth > 0) { onLoaded(); return; }
+      img.addEventListener('load', onLoaded);
+      img.addEventListener('error', function() {
+        if (parent) parent.classList.add('img-ready');
+      });
+    }
+    document.querySelectorAll('img').forEach(initImg);
+
+    const track = document.getElementById('personaTrack');
+    document.getElementById('personaNext').addEventListener('click', () => {
+      track.scrollBy({ left: track.clientWidth + 20, behavior: 'smooth' });
+    });
+    document.getElementById('personaPrev').addEventListener('click', () => {
+      track.scrollBy({ left: -(track.clientWidth + 20), behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

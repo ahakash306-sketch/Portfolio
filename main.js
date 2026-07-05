@@ -38,6 +38,18 @@ if (journeyBtn) {
   journeyBtn.addEventListener('click', () => {
     document.querySelectorAll('.jt-item--hidden').forEach(el => el.classList.remove('jt-item--hidden'));
     document.getElementById('journeyCta').style.display = 'none';
+    document.getElementById('journeyCloseWrap').style.display = 'block';
+  });
+}
+
+const journeyCloseBtn = document.getElementById('journeyCloseBtn');
+if (journeyCloseBtn) {
+  journeyCloseBtn.addEventListener('click', () => {
+    document.querySelectorAll('.jt-item').forEach((el, i) => {
+      if (i >= 3) el.classList.add('jt-item--hidden');
+    });
+    document.getElementById('journeyCloseWrap').style.display = 'none';
+    document.getElementById('journeyCta').style.display = '';
   });
 }
 

@@ -385,182 +385,18 @@
 .buseit-persona-track::-webkit-scrollbar { display: none; }
 
 .persona-card {
-  display: flex;
   min-width: 100%;
   width: 100%;
-  height: 600px;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.08);
   scroll-snap-align: start;
   flex-shrink: 0;
 }
-.persona-photo {
-  width: 320px;
-  flex-shrink: 0;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.persona-card.persona-seller .persona-photo { background: rgba(255,124,63,1); }
-.persona-card.persona-buyer  .persona-photo { background: #1a2875; }
-.persona-photo img {
+.persona-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
   display: block;
+  border-radius: 16px;
 }
-.persona-detail {
-  flex: 1;
-  background: #0e0e0e;
-  padding: 28px 32px;
-  display: flex;
-  gap: 32px;
-  overflow: hidden;
-  min-width: 0;
-}
-.persona-col-left { flex: 1.1; overflow: hidden; min-width: 0; }
-.persona-col-right { flex: 1; overflow: hidden; min-width: 0; }
-
-.persona-name {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 3px;
-}
-.persona-badge {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-}
-.persona-card.persona-seller .persona-badge { color: var(--cs-accent); }
-.persona-card.persona-buyer  .persona-badge { color: #6699ff; }
-.persona-job {
-  font-size: 12px;
-  color: rgba(255,255,255,0.45);
-  margin-bottom: 8px;
-}
-.persona-meta-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  font-size: 12px;
-  color: rgba(255,255,255,0.45);
-  margin-bottom: 14px;
-  flex-wrap: wrap;
-}
-.persona-meta-row span { display: flex; align-items: center; gap: 4px; }
-.persona-meta-row svg { width: 12px; height: 12px; }
-.persona-quote {
-  background: rgba(255,255,255,0.05);
-  border-radius: 10px;
-  padding: 10px 14px;
-  font-size: 12.5px;
-  font-style: italic;
-  line-height: 1.6;
-  margin-bottom: 14px;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  white-space: normal;
-}
-.persona-card.persona-seller .persona-quote { color: var(--cs-accent); }
-.persona-card.persona-buyer  .persona-quote { color: #6699ff; }
-.persona-quote::before { content: '\201C'; margin-right: 2px; }
-.persona-sub-title {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text);
-  margin-bottom: 6px;
-  margin-top: 14px;
-}
-.persona-sub-title:first-of-type { margin-top: 0; }
-.persona-about-text {
-  font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  line-height: 1.7;
-  margin-bottom: 0;
-}
-.persona-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-}
-.persona-list li {
-  font-size: 12px;
-  color: rgba(255,255,255,0.6);
-  padding-left: 12px;
-  position: relative;
-  line-height: 1.5;
-}
-.persona-list li::before {
-  content: '•';
-  position: absolute;
-  left: 0;
-  color: rgba(255,255,255,0.3);
-}
-.persona-motivations {
-  display: flex;
-  gap: 8px;
-  margin-top: 6px;
-}
-.persona-mot-item {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-.persona-mot-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.persona-card.persona-seller .persona-mot-icon { background: rgba(255,124,63,0.15); color: var(--cs-accent); }
-.persona-card.persona-buyer  .persona-mot-icon { background: rgba(102,153,255,0.15); color: #6699ff; }
-.persona-mot-icon svg { width: 16px; height: 16px; }
-.persona-mot-label {
-  font-size: 10px;
-  color: rgba(255,255,255,0.45);
-  text-align: center;
-  line-height: 1.3;
-}
-.persona-icon-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.persona-icon-list li {
-  font-size: 12px;
-  color: rgba(255,255,255,0.65);
-  display: flex;
-  align-items: flex-start;
-  gap: 7px;
-  line-height: 1.5;
-}
-.persona-icon-list li svg {
-  width: 13px;
-  height: 13px;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-.persona-card.persona-seller .persona-goal-icon { color: var(--cs-accent); }
-.persona-card.persona-buyer  .persona-goal-icon { color: #6699ff; }
-.persona-frus-icon { color: rgba(255,90,90,1); }
-.persona-dev-icon  { color: rgba(255,255,255,0.35); }
 
 /* Nav arrows */
 .buseit-persona-nav {
@@ -598,7 +434,4 @@
   #buseit-fraud { padding: 0 0 72px; }
   #buseit-brief { padding: 56px 0 72px; }
   #buseit-research { padding: 56px 0 40px; }
-  .persona-card { height: auto; flex-direction: column; }
-  .persona-photo { width: 100%; height: 260px; }
-  .persona-detail { flex-direction: column; padding: 20px; }
 }

@@ -7,6 +7,7 @@
   --border: #222222;
   --text: #ffffff;
   --text-muted: #888888;
+  --gray: #888888;
   --text-dim: #555555;
   --accent: #4169ff;
   --accent-hover: #5a7fff;
@@ -97,7 +98,7 @@ nav {
 
 .section-label {
   font-size: 20px;
-  color: #737373;
+  color: var(--text-muted);
   font-weight: 400;
   letter-spacing: 0.04em;
   display: flex;
@@ -274,16 +275,6 @@ img.loaded {
   padding: 100px 0;
 }
 
-#about .section-label::after {
-  max-width: none;
-  height: 5px;
-  background-image:
-    linear-gradient(#ffffff, #ffffff),
-    radial-gradient(circle, #ffffff 2.5px, transparent 2.5px);
-  background-size: calc(100% - 6px) 1px, 5px 5px;
-  background-position: left center, right center;
-  background-repeat: no-repeat;
-}
 
 .about-grid {
   display: grid;
@@ -425,7 +416,7 @@ img.loaded {
 
 .project-desc {
   font-size: 14px;
-  color: #C2C2C2;
+  color: var(--text-muted);
   /* line-height: 1.75; */
   margin-bottom: 24px;
 }
@@ -750,7 +741,7 @@ img.loaded {
 
 .tools-label {
   font-size: 16px;
-  color: #737373;
+  color: var(--text-muted);
   margin-bottom: 20px;
 }
 
@@ -803,6 +794,7 @@ img.loaded {
   padding: 40px 0 100px;
 }
 
+#about .section-label::after,
 #connect .section-label::after,
 #skills .section-label::after,
 #journey .section-label::after,
@@ -810,29 +802,32 @@ img.loaded {
   display: none;
 }
 
+#about .section-header,
 #connect .section-header,
 #skills .section-header,
 #journey .section-header,
 #experience .section-header {
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
+#about .section-title,
 #connect .section-title,
 #skills .section-title,
 #journey .section-title,
 #experience .section-title {
-  display: block;
+  white-space: nowrap;
 }
 
+#about .section-header::after,
 #connect .section-header::after,
 #skills .section-header::after,
 #journey .section-header::after,
 #experience .section-header::after {
   content: '';
-  position: absolute;
-  width: 25%;
-  top: 50%;
-  transform: translateY(-50%);
+  flex: 1;
+  max-width: 280px;
   height: 5px;
   background-image:
     linear-gradient(#ffffff, #ffffff),
@@ -841,11 +836,6 @@ img.loaded {
   background-position: left center, right center;
   background-repeat: no-repeat;
 }
-
-#connect .section-header::after    { left: 16%; }
-#skills .section-header::after     { left: 32%; }
-#journey .section-header::after    { left: 16%; }
-#experience .section-header::after { left: 16%; }
 
 .connect-grid {
   display: grid;
@@ -899,7 +889,7 @@ img.loaded {
 }
 
 .connect-btn {
-  color: #C2C2C2;
+  color: var(--text-muted);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -919,11 +909,11 @@ img.loaded {
 .connect-btn:hover { border-color: #444; background: rgba(255,255,255,0.04); }
 
 .connect-btn--mail {
-  color: #C2C2C2;
-  border-color: #C2C2C2;
+  color: var(--text-muted);
+  border-color: var(--text-muted);
   padding: 5px;
 }
-.connect-btn--mail:hover { border-color: #C2C2C2; background: rgba(194,194,194,0.06); }
+.connect-btn--mail:hover { border-color: var(--text-muted); background: rgba(194,194,194,0.06); }
 
 /* ── FOOTER ── */
 footer {
@@ -942,7 +932,7 @@ footer {
 
 .footer-copy {
   font-size: 16px;
-  color: #C2C2C2;
+  color: var(--text-muted);
 }
 
 .footer-right {
@@ -1041,11 +1031,6 @@ footer {
 
   .skills-grid { grid-template-columns: 1fr 1fr; }
   .connect-grid { grid-template-columns: 1fr; }
-
-  #connect .section-header::after  { left: 22%; }
-  #skills .section-header::after   { left: 44%; }
-  #journey .section-header::after  { left: 22%; }
-  #experience .section-header::after { left: 30%; }
 
   footer { margin-left: 20px; margin-right: 20px; margin-top: 60px; }
 }
